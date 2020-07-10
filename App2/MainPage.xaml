@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.MainPage">
+
+    <StackLayout x:Name="back" BackgroundColor="Aqua">
+
+
+        <StackLayout x:Name="title" BackgroundColor="LightSeaGreen">
+            <Label Text="Change the background color of your application!" FontSize="Title" 
+                   HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"
+               TextColor ="Azure" FontAttributes="Bold"  />
+        </StackLayout>
+
+        <Button BackgroundColor="LightCoral"  Text = "Red!" FontSize="Body" BorderWidth="1"
+        HorizontalOptions="Start" VerticalOptions="Center"
+        Clicked="OnButtonClickedRed" FontAttributes="Italic" BorderRadius="10" 
+                TextColor ="Azure" />
+
+        <Button BackgroundColor="LimeGreen" Text = "Green!" FontSize="Body" BorderWidth="2"
+        HorizontalOptions="Center" VerticalOptions="Center"
+        Clicked="OnButtonClickedGreen" FontAttributes="Italic" BorderRadius="10" 
+                TextColor ="Azure" />
+
+        <Button BackgroundColor="Navy" Text = "Blue!" FontSize="Body" BorderWidth="1"
+        HorizontalOptions="End" VerticalOptions="Center"
+        Clicked="OnButtonClickedBlue" FontAttributes="Italic" BorderRadius="10" 
+                TextColor ="Azure" />
+
+        <StackLayout x:Name="subtitle" BackgroundColor="LightSeaGreen">
+            <Label x:Name="header" Text="Brightness" FontSize="Subtitle" HorizontalOptions="Center"
+               TextColor ="Azure"   />
+        </StackLayout>
+
+        <Slider x:Name="slider" Minimum="0" Maximum="10000" Value="5000"
+                ValueChanged="OnValueChanged" />
+
+        <Button x:Name="quit" BackgroundColor="LightSeaGreen" Text = "Quit" FontSize="Small" BorderWidth="0"
+         VerticalOptions="End"
+        Clicked="OnButtonClickedQuit" 
+                TextColor ="Azure" />
+
+
+    </StackLayout>
+
+
+</ContentPage>
